@@ -1,0 +1,17 @@
+# Core ML stack — required for actual training/inference (train.py, inference.py, serve.py)
+torch>=2.1
+transformers>=4.38
+peft>=0.9
+datasets>=2.17
+accelerate>=0.27
+
+# Serving
+fastapi>=0.110
+uvicorn>=0.27
+pydantic>=2.6
+
+# Optional — experiment tracking (set TrainingConfig.report_to = "mlflow" to use)
+mlflow>=2.11
+
+# Note: src/prepare_data.py and `python src/train.py --dry-run` work
+# with zero dependencies beyond the Python standard library.

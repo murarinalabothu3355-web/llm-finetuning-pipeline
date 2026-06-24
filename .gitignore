@@ -1,0 +1,16 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+.DS_Store
+*.egg-info/
+
+# Generated data — regenerate via prepare_data.py
+data/*.jsonl
+
+# Model checkpoints and adapters — large binary files, regenerate via train.py
+outputs/checkpoints/
+outputs/final_adapter/
+
+# MLflow local tracking store
+mlruns/
